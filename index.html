@@ -1,165 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Springfield Energy LLC</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<!-- Keep the rest of the file the same as before up until the <section id="about"> -->
+<section id="about" class="tab-content active">
+  <h2>About Us</h2>
+  <p>Springfield Energy LLC is a leading innovator in custom energy solutions. With a team of engineers and consultants, we specialize in precision power system technology for both industrial and commercial clients.</p>
+  <p>Founded in 2015, our mission is to make high-performance energy systems accessible, reliable, and adaptable. We bring decades of experience in power electronics, grid integration, and energy storage optimization.</p>
+  <p>Our vision is to lead the transformation of power systems worldwide by combining cutting-edge technology with customer-focused design.</p>
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f0f8ff;
-      color: #222;
-    }
+  <div class="image-grid">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/RaspberryPi_PCB.jpg/640px-RaspberryPi_PCB.jpg" alt="Small PCB board">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/PCB_Assembly.jpg/640px-PCB_Assembly.jpg" alt="PCB Assembly">
+  </div>
+</section>
 
-    header {
-      background-color: #023047;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
+<section id="services" class="tab-content">
+  <h2>Our Services</h2>
+  <ul>
+    <li><strong>⚡ Power System Consulting:</strong> In-depth system design, failure analysis, and operational optimization to reduce downtime and enhance efficiency.</li>
+    <li><strong>🔌 Custom Voltage Sensors:</strong> Precision-engineered sensors tailored for high voltage, renewable integration, and digital system feedback.</li>
+    <li><strong>🔋 Power Supply Development:</strong> Rugged, custom-built supplies optimized for high reliability, efficiency, and compact form factors.</li>
+    <li><strong>🌐 Grid Integration Support:</strong> End-to-end services for DER systems, inverters, and utility compliance.</li>
+    <li><strong>🧪 Prototyping & Testing:</strong> We provide fast turnaround for R&D prototypes with full testing and documentation.</li>
+  </ul>
 
-    .logo {
-      max-width: 120px;
-      margin-bottom: 1rem;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #219ebc;
-    }
-
-    nav button {
-      background: none;
-      border: none;
-      padding: 1rem 2rem;
-      cursor: pointer;
-      color: white;
-      font-size: 1rem;
-      transition: background 0.3s;
-    }
-
-    nav button:hover,
-    nav button.active {
-      background-color: #126782;
-    }
-
-    .tab-content {
-      display: none;
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    .tab-content.active {
-      display: block;
-    }
-
-    h2 {
-      color: #126782;
-      margin-top: 0;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    li {
-      margin-bottom: 0.8rem;
-    }
-
-    footer {
-      background-color: #023047;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    a {
-      color: #126782;
-      text-decoration: none;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-      }
-
-      nav button {
-        width: 100%;
-        text-align: left;
-        padding-left: 1.5rem;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <img src="logo.png" alt="Springfield Energy Logo" class="logo">
-    <h1>Springfield Energy LLC</h1>
-    <p>Empowering Your Energy Vision</p>
-  </header>
-
-  <nav>
-    <button class="tab-btn active" onclick="showTab('about')">About</button>
-    <button class="tab-btn" onclick="showTab('services')">Services</button>
-    <button class="tab-btn" onclick="showTab('contact')">Contact</button>
-  </nav>
-
-  <section id="about" class="tab-content active">
-    <h2>About Us</h2>
-    <p>Springfield Energy LLC is a leading innovator in custom energy solutions. With a team of engineers and consultants, we specialize in precision power system technology for both industrial and commercial clients.</p>
-    <p>Founded in 2015, our mission is to make high-performance energy systems accessible, reliable, and adaptable. We bring decades of experience in power electronics, grid integration, and energy storage optimization.</p>
-    <p>Our vision is to lead the transformation of power systems worldwide by combining cutting-edge technology with customer-focused design.</p>
-  </section>
-
-  <section id="services" class="tab-content">
-    <h2>Our Services</h2>
-    <ul>
-      <li><strong>⚡ Power System Consulting:</strong> In-depth system design, failure analysis, and operational optimization to reduce downtime and enhance efficiency.</li>
-      <li><strong>🔌 Custom Voltage Sensors:</strong> Precision-engineered sensors tailored for high voltage, renewable integration, and digital system feedback.</li>
-      <li><strong>🔋 Power Supply Development:</strong> Rugged, custom-built supplies optimized for high reliability, efficiency, and compact form factors.</li>
-      <li><strong>🌐 Grid Integration Support:</strong> End-to-end services for DER systems, inverters, and utility compliance.</li>
-      <li><strong>🧪 Prototyping & Testing:</strong> We provide fast turnaround for R&D prototypes with full testing and documentation.</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="tab-content">
-    <h2>Contact Us</h2>
-    <p><strong>📍 Address:</strong><br>
-      17130 Van Buren Blvd #608<br>
-      Riverside, CA 92504</p>
-    <p><strong>📧 Email:</strong> <a href="mailto:ebaycontactspringfield@gmail.com">ebaycontactspringfield@gmail.com</a></p>
-    <p><strong>📞 Phone:</strong> 617-952-1632</p>
-    <p>Feel free to reach out for consultations, partnerships, or product inquiries. We respond within 1 business day.</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Springfield Energy LLC. All rights reserved.</p>
-  </footer>
-
-  <script>
-    function showTab(tabId) {
-      const tabs = document.querySelectorAll('.tab-content');
-      const buttons = document.querySelectorAll('.tab-btn');
-      tabs.forEach(tab => tab.classList.remove('active'));
-      buttons.forEach(btn => btn.classList.remove('active'));
-
-      document.getElementById(tabId).classList.add('active');
-      event.target.classList.add('active');
-    }
-  </script>
-</body>
-</html>
+  <div class="image-grid">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Power_supply_unit_inside.jpg" alt="Power Supply Internals">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Custom_circuit_board_power_management.jpg/640px-Custom_circuit_board_power_management.jpg" alt="Custom PCB for Power">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/SMPS.jpg/640px-SMPS.jpg" alt="Switch Mode Power Supply">
+  </div>
+</section>
